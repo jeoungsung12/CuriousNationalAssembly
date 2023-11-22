@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E47947D32B0B1EC600E381A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47947D22B0B1EC600E381A8 /* AppDelegate.swift */; };
+		E47947D52B0B1EC600E381A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47947D42B0B1EC600E381A8 /* SceneDelegate.swift */; };
+		E47947D72B0B1EC600E381A8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47947D62B0B1EC600E381A8 /* MainViewController.swift */; };
+		E47947DC2B0B1EC800E381A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E47947DB2B0B1EC800E381A8 /* Assets.xcassets */; };
+		E47947DF2B0B1EC800E381A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E47947DD2B0B1EC800E381A8 /* LaunchScreen.storyboard */; };
+		E47947E72B0B207200E381A8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47947E62B0B207200E381A8 /* LoginViewController.swift */; };
+		E47947EA2B0B209400E381A8 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47947E92B0B209400E381A8 /* IntroViewController.swift */; };
+		E47947EC2B0B20AB00E381A8 /* LoginServiceAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47947EB2B0B20AB00E381A8 /* LoginServiceAuth.swift */; };
+		E47947EF2B0B20C500E381A8 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = E47947EE2B0B20C500E381A8 /* SwiftKeychainWrapper */; };
+		E47947F22B0B211200E381A8 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E47947F12B0B211200E381A8 /* SnapKit */; };
+		E47947F52B0B21A000E381A8 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E47947F42B0B21A000E381A8 /* Alamofire */; };
+		E47947F92B0B240600E381A8 /* KakaoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = E47947F82B0B240600E381A8 /* KakaoSDK */; };
+		E47947FB2B0B240600E381A8 /* KakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E47947FA2B0B240600E381A8 /* KakaoSDKAuth */; };
+		E47947FD2B0B240600E381A8 /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = E47947FC2B0B240600E381A8 /* KakaoSDKUser */; };
+		E47947FF2B0B38A800E381A8 /* ProgressingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47947FE2B0B38A800E381A8 /* ProgressingTableView.swift */; };
+		E47948022B0B3AE100E381A8 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47948012B0B3AE100E381A8 /* CustomTableViewCell.swift */; };
+		E47948042B0B3DF100E381A8 /* ProgressingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47948032B0B3DF100E381A8 /* ProgressingDetailViewController.swift */; };
+		E47948062B0BB1E700E381A8 /* LocalNotificationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47948052B0BB1E700E381A8 /* LocalNotificationHelper.swift */; };
+		E47948082B0BBA6F00E381A8 /* KakaoLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47948072B0BBA6F00E381A8 /* KakaoLoginService.swift */; };
+		E47948152B0CB6EC00E381A8 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47948142B0CB6EC00E381A8 /* WebViewController.swift */; };
+		E4AD0A3E2B0D1E780049359F /* PetitionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD0A3D2B0D1E780049359F /* PetitionTableViewController.swift */; };
+		E4AD0A402B0D1E8B0049359F /* PetitionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD0A3F2B0D1E8B0049359F /* PetitionDetailViewController.swift */; };
+		E4AD0A432B0D259A0049359F /* ResultLawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD0A422B0D259A0049359F /* ResultLawViewController.swift */; };
+		E4AD0A452B0D25AC0049359F /* ResultLawDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD0A442B0D25AC0049359F /* ResultLawDetailViewController.swift */; };
+		E4AD0A472B0D28300049359F /* PetitionWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD0A462B0D28300049359F /* PetitionWebViewController.swift */; };
+		E4AD0A492B0D2D8C0049359F /* ResultWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD0A482B0D2D8C0049359F /* ResultWebViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E47947CF2B0B1EC600E381A8 /* DiseaseNotification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiseaseNotification.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E47947D22B0B1EC600E381A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E47947D42B0B1EC600E381A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E47947D62B0B1EC600E381A8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E47947DB2B0B1EC800E381A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E47947DE2B0B1EC800E381A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E47947E02B0B1EC800E381A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E47947E62B0B207200E381A8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E47947E92B0B209400E381A8 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		E47947EB2B0B20AB00E381A8 /* LoginServiceAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceAuth.swift; sourceTree = "<group>"; };
+		E47947F62B0B234800E381A8 /* DiseaseNotification.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DiseaseNotification.entitlements; sourceTree = "<group>"; };
+		E47947FE2B0B38A800E381A8 /* ProgressingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressingTableView.swift; sourceTree = "<group>"; };
+		E47948012B0B3AE100E381A8 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		E47948032B0B3DF100E381A8 /* ProgressingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressingDetailViewController.swift; sourceTree = "<group>"; };
+		E47948052B0BB1E700E381A8 /* LocalNotificationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationHelper.swift; sourceTree = "<group>"; };
+		E47948072B0BBA6F00E381A8 /* KakaoLoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginService.swift; sourceTree = "<group>"; };
+		E47948142B0CB6EC00E381A8 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		E4AD0A3D2B0D1E780049359F /* PetitionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetitionTableViewController.swift; sourceTree = "<group>"; };
+		E4AD0A3F2B0D1E8B0049359F /* PetitionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetitionDetailViewController.swift; sourceTree = "<group>"; };
+		E4AD0A422B0D259A0049359F /* ResultLawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultLawViewController.swift; sourceTree = "<group>"; };
+		E4AD0A442B0D25AC0049359F /* ResultLawDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultLawDetailViewController.swift; sourceTree = "<group>"; };
+		E4AD0A462B0D28300049359F /* PetitionWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetitionWebViewController.swift; sourceTree = "<group>"; };
+		E4AD0A482B0D2D8C0049359F /* ResultWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultWebViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E47947CC2B0B1EC600E381A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E47947F52B0B21A000E381A8 /* Alamofire in Frameworks */,
+				E47947F92B0B240600E381A8 /* KakaoSDK in Frameworks */,
+				E47947FD2B0B240600E381A8 /* KakaoSDKUser in Frameworks */,
+				E47947EF2B0B20C500E381A8 /* SwiftKeychainWrapper in Frameworks */,
+				E47947F22B0B211200E381A8 /* SnapKit in Frameworks */,
+				E47947FB2B0B240600E381A8 /* KakaoSDKAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E47947C62B0B1EC600E381A8 = {
+			isa = PBXGroup;
+			children = (
+				E47948052B0BB1E700E381A8 /* LocalNotificationHelper.swift */,
+				E47947D12B0B1EC600E381A8 /* DiseaseNotification */,
+				E47947D02B0B1EC600E381A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E47947D02B0B1EC600E381A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E47947CF2B0B1EC600E381A8 /* DiseaseNotification.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E47947D12B0B1EC600E381A8 /* DiseaseNotification */ = {
+			isa = PBXGroup;
+			children = (
+				E47948002B0B38B300E381A8 /* UIView */,
+				E47947F62B0B234800E381A8 /* DiseaseNotification.entitlements */,
+				E47947E82B0B207600E381A8 /* LoginService */,
+				E47947D22B0B1EC600E381A8 /* AppDelegate.swift */,
+				E47947D42B0B1EC600E381A8 /* SceneDelegate.swift */,
+				E47947DB2B0B1EC800E381A8 /* Assets.xcassets */,
+				E47947DD2B0B1EC800E381A8 /* LaunchScreen.storyboard */,
+				E47947E02B0B1EC800E381A8 /* Info.plist */,
+			);
+			path = DiseaseNotification;
+			sourceTree = "<group>";
+		};
+		E47947E82B0B207600E381A8 /* LoginService */ = {
+			isa = PBXGroup;
+			children = (
+				E47947E62B0B207200E381A8 /* LoginViewController.swift */,
+				E47947E92B0B209400E381A8 /* IntroViewController.swift */,
+				E47947EB2B0B20AB00E381A8 /* LoginServiceAuth.swift */,
+				E47948072B0BBA6F00E381A8 /* KakaoLoginService.swift */,
+			);
+			path = LoginService;
+			sourceTree = "<group>";
+		};
+		E47948002B0B38B300E381A8 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				E4AD0A412B0D256D0049359F /* ResultLaw */,
+				E4AD0A3C2B0D1E570049359F /* PetitionLaw */,
+				E4AD0A3B2B0D1E2C0049359F /* ProgressingLaw */,
+				E47947D62B0B1EC600E381A8 /* MainViewController.swift */,
+				E47948012B0B3AE100E381A8 /* CustomTableViewCell.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		E4AD0A3B2B0D1E2C0049359F /* ProgressingLaw */ = {
+			isa = PBXGroup;
+			children = (
+				E47947FE2B0B38A800E381A8 /* ProgressingTableView.swift */,
+				E47948032B0B3DF100E381A8 /* ProgressingDetailViewController.swift */,
+				E47948142B0CB6EC00E381A8 /* WebViewController.swift */,
+			);
+			path = ProgressingLaw;
+			sourceTree = "<group>";
+		};
+		E4AD0A3C2B0D1E570049359F /* PetitionLaw */ = {
+			isa = PBXGroup;
+			children = (
+				E4AD0A3D2B0D1E780049359F /* PetitionTableViewController.swift */,
+				E4AD0A3F2B0D1E8B0049359F /* PetitionDetailViewController.swift */,
+				E4AD0A462B0D28300049359F /* PetitionWebViewController.swift */,
+			);
+			path = PetitionLaw;
+			sourceTree = "<group>";
+		};
+		E4AD0A412B0D256D0049359F /* ResultLaw */ = {
+			isa = PBXGroup;
+			children = (
+				E4AD0A422B0D259A0049359F /* ResultLawViewController.swift */,
+				E4AD0A442B0D25AC0049359F /* ResultLawDetailViewController.swift */,
+				E4AD0A482B0D2D8C0049359F /* ResultWebViewController.swift */,
+			);
+			path = ResultLaw;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E47947CE2B0B1EC600E381A8 /* DiseaseNotification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E47947E32B0B1EC800E381A8 /* Build configuration list for PBXNativeTarget "DiseaseNotification" */;
+			buildPhases = (
+				E47947CB2B0B1EC600E381A8 /* Sources */,
+				E47947CC2B0B1EC600E381A8 /* Frameworks */,
+				E47947CD2B0B1EC600E381A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DiseaseNotification;
+			packageProductDependencies = (
+				E47947EE2B0B20C500E381A8 /* SwiftKeychainWrapper */,
+				E47947F12B0B211200E381A8 /* SnapKit */,
+				E47947F42B0B21A000E381A8 /* Alamofire */,
+				E47947F82B0B240600E381A8 /* KakaoSDK */,
+				E47947FA2B0B240600E381A8 /* KakaoSDKAuth */,
+				E47947FC2B0B240600E381A8 /* KakaoSDKUser */,
+			);
+			productName = DiseaseNotification;
+			productReference = E47947CF2B0B1EC600E381A8 /* DiseaseNotification.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E47947C72B0B1EC600E381A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					E47947CE2B0B1EC600E381A8 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = E47947CA2B0B1EC600E381A8 /* Build configuration list for PBXProject "DiseaseNotification" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E47947C62B0B1EC600E381A8;
+			packageReferences = (
+				E47947ED2B0B20C500E381A8 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+				E47947F02B0B211200E381A8 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				E47947F32B0B21A000E381A8 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				E47947F72B0B240600E381A8 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
+			);
+			productRefGroup = E47947D02B0B1EC600E381A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E47947CE2B0B1EC600E381A8 /* DiseaseNotification */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E47947CD2B0B1EC600E381A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E47947DF2B0B1EC800E381A8 /* LaunchScreen.storyboard in Resources */,
+				E47947DC2B0B1EC800E381A8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E47947CB2B0B1EC600E381A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4AD0A492B0D2D8C0049359F /* ResultWebViewController.swift in Sources */,
+				E47947EA2B0B209400E381A8 /* IntroViewController.swift in Sources */,
+				E4AD0A432B0D259A0049359F /* ResultLawViewController.swift in Sources */,
+				E47948042B0B3DF100E381A8 /* ProgressingDetailViewController.swift in Sources */,
+				E47947EC2B0B20AB00E381A8 /* LoginServiceAuth.swift in Sources */,
+				E47948022B0B3AE100E381A8 /* CustomTableViewCell.swift in Sources */,
+				E47948062B0BB1E700E381A8 /* LocalNotificationHelper.swift in Sources */,
+				E47947E72B0B207200E381A8 /* LoginViewController.swift in Sources */,
+				E47947D72B0B1EC600E381A8 /* MainViewController.swift in Sources */,
+				E4AD0A402B0D1E8B0049359F /* PetitionDetailViewController.swift in Sources */,
+				E47947D32B0B1EC600E381A8 /* AppDelegate.swift in Sources */,
+				E4AD0A472B0D28300049359F /* PetitionWebViewController.swift in Sources */,
+				E47947FF2B0B38A800E381A8 /* ProgressingTableView.swift in Sources */,
+				E4AD0A452B0D25AC0049359F /* ResultLawDetailViewController.swift in Sources */,
+				E47947D52B0B1EC600E381A8 /* SceneDelegate.swift in Sources */,
+				E4AD0A3E2B0D1E780049359F /* PetitionTableViewController.swift in Sources */,
+				E47948082B0BBA6F00E381A8 /* KakaoLoginService.swift in Sources */,
+				E47948152B0CB6EC00E381A8 /* WebViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E47947DD2B0B1EC800E381A8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E47947DE2B0B1EC800E381A8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E47947E12B0B1EC800E381A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E47947E22B0B1EC800E381A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E47947E42B0B1EC800E381A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DiseaseNotification/DiseaseNotification.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q653PU93R6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DiseaseNotification/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "사용자의 위치의 질병예측 위해 위치 정보를 사용합니다.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = WEDLE.DiseaseNotification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E47947E52B0B1EC800E381A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DiseaseNotification/DiseaseNotification.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q653PU93R6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DiseaseNotification/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "사용자의 위치의 질병예측 위해 위치 정보를 사용합니다.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = WEDLE.DiseaseNotification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E47947CA2B0B1EC600E381A8 /* Build configuration list for PBXProject "DiseaseNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E47947E12B0B1EC800E381A8 /* Debug */,
+				E47947E22B0B1EC800E381A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E47947E32B0B1EC800E381A8 /* Build configuration list for PBXNativeTarget "DiseaseNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E47947E42B0B1EC800E381A8 /* Debug */,
+				E47947E52B0B1EC800E381A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E47947ED2B0B20C500E381A8 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		E47947F02B0B211200E381A8 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		E47947F32B0B21A000E381A8 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		E47947F72B0B240600E381A8 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kakao/kakao-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E47947EE2B0B20C500E381A8 /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E47947ED2B0B20C500E381A8 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+		E47947F12B0B211200E381A8 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E47947F02B0B211200E381A8 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		E47947F42B0B21A000E381A8 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E47947F32B0B21A000E381A8 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		E47947F82B0B240600E381A8 /* KakaoSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E47947F72B0B240600E381A8 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDK;
+		};
+		E47947FA2B0B240600E381A8 /* KakaoSDKAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E47947F72B0B240600E381A8 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKAuth;
+		};
+		E47947FC2B0B240600E381A8 /* KakaoSDKUser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E47947F72B0B240600E381A8 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKUser;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E47947C72B0B1EC600E381A8 /* Project object */;
+}
